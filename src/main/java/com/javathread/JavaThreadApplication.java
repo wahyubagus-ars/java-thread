@@ -7,7 +7,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class JavaThreadApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(JavaThreadApplication.class, args);
+		String thread = Thread.currentThread().getName();
+		System.out.println(thread);
 	}
 
 }
